@@ -1,5 +1,5 @@
 /* Estilos para pantallas pequeñas (móviles) */
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     .desktop{
         display: none;
     }
@@ -12,7 +12,7 @@
 
 
   /* Estilos para pantallas medianas (tabletas) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 576px) and (max-width: 991px) {
     .desktop{
         display: none;
     }
@@ -27,7 +27,7 @@
 
 
   /* Estilos para pantallas grandes (computadoras portátiles y de escritorio) */
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .tablet{
         display: none;
     }
@@ -47,13 +47,31 @@ body{
     font-weight: 500;
     
 }
+
 .fondo2{
-    background-image: url(fond2.jpg);
+    background-image: url(cbum.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 120vh;
+}
+
+.fondo5{
+    background-image: url(men5.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+.fondo21{
+    background-image: url(gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
+
 .fondo1{
     background-image: url(img5.jpg);
     background-repeat: no-repeat;
@@ -62,6 +80,7 @@ body{
     height: 130vh;
     color: white;
 }
+
 .fondo_sm{
     background-image: url(fonfo.png);
     background-repeat: no-repeat;
@@ -72,7 +91,7 @@ body{
     color: white;
 }
 .fondo_lg{
-    background-image: url(fondo_lg_r.jpg);
+    background-image: url(video1r\ \(1\).gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -81,6 +100,23 @@ body{
     color: white;
 }
 .templo{
+    text-align: center ;
+    color: white;
+    font-family: 'Lily Script One', cursive;
+    font-family: 'Whisper', cursive;
+    font-size: 55px;
+    font-weight: 590;
+}
+
+.templo66{
+    text-align: center ;
+    color: white;
+    font-family: 'Lily Script One', cursive;
+    font-family: 'Whisper', cursive;
+    font-size: 40px;
+    font-weight: 590;
+}
+.templo67{
     text-align: center ;
     color: white;
     font-family: 'Lily Script One', cursive;
@@ -99,20 +135,28 @@ body{
     font-size: 55px;
     font-weight: 590;
 }
+.templo21{
+    background-color: transparent;
+    text-align: center ;
+    color: white;
+    margin: 0 0 0 0;
+    font-family: 'Lily Script One', cursive;
+    font-family: 'Whisper', cursive;
+    font-size: 55px;
+    font-weight: 590;
+}
 .templo3{
     text-align: center ;
     color: white;
-    font-family: 'Lily Script One', cursive;
-    
+    font-family: 'Meteoritox', sans-serif;
     font-size: 45px;
     font-weight: 590;
 }
 .templo31{
     text-align: center ;
     color: white;
-    font-family: 'Lily Script One', cursive;
-    
-    font-size: 25px;
+    font-family: 'Meteoritox', sans-serif;
+    font-size: 20px;
     font-weight: 590;
 }
 #moove_gdpr_save_popup_settings_button:not(.gdpr-floating-button-custom-position) {
@@ -133,6 +177,31 @@ body{
     outline: none;
     font-weight: 400;
     font-size: 14px;
+    line-height: 20px;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+
+#moove_gdpr_save_popup_settings_button_2:not(.gdpr-floating-button-custom-position) {
+    left: 30px;
+    bottom: 60px !important;
+    background-color: #373737;
+    color: #fff;
+    display: block;
+    z-index: 1001;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    height: 59px;
+    width: 60px;
+    outline: none;
+    font-weight: 400;
+    font-size: 7px;
     line-height: 20px;
     border-radius: 0;
     border: none;
@@ -224,11 +293,11 @@ footer .footer_main .tag .social_link a:hover::after{
     justify-content: center !important; 
 }
 
-/* .navbar>.container, .navbar>.container-fluid {
+.nav{
     display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    align-content: center;
-} */
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: center;
+}
